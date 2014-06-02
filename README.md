@@ -17,17 +17,19 @@ HTML4 Attributes Added
 HTML5 Tags Added
 * Main
 * Picture
+* Template (Web Components)
 
 HTML5 Attributes Added
-* Audio ("buffered", "played")
-* Autocomplete ("billing", "cc-name", "cc-number", "cc-css", "cc-exp-month", "cc-exp-year", "cc-type", "country", "email", "name", "postal-code", "region", "shipping", "street-address", "tel", "url")
 * Autocorrect
 * Autocapitalize
-* Img ("srcset")
-* Input ("autocorrect")
 * Inputmode ("numeric")
 * Itemscope, Itemtype, Itemprop (Schema.org)
+
+HTML5 Attribute Options Added
+* Audio ("buffered", "played")
+* Autocomplete ("billing", "cc-name", "cc-number", "cc-css", "cc-exp-month", "cc-exp-year", "cc-type", "country", "email", "name", "postal-code", "region", "shipping", "street-address", "tel", "url")
+* Img ("srcset")
+* Input ("autocorrect")
 * Meta/name ("format-detection", "robots", "viewport")
-* Template (Web Components)
 * Textarea ("autocomplete", "spellcheck")
 * Video ("buffered", "crossorigin")
