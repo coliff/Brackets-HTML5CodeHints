@@ -1,9 +1,9 @@
 {
     "title": "More HTML5 Code Hints",
-    "name": "brackets-HTML5CodeHints",
-    "description": "More HTML5 Code Hints",
-    "version": "0.9.0",
-    "author": "c.oliff <christianoliff@gmail.com>",
+    "name": "brackets-html5codehints",
+    "description": "Extends HTML code hints with more HTML5 elements and attributes such as Main, Picture, Srcset, inputmode as well as HTML4 elements such as cellpadding, cellspacing and iframe",
+    "version": "0.9.5",
+    "author": "C.Oliff <christianoliff@gmail.com>",
     "homepage": "https://github.com/coliff/brackets-HTML5CodeHints/",
     "repository": {
         "type": "git",
