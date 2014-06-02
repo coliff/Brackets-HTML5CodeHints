@@ -1,0 +1,15 @@
+{
+    "title": "More HTML5 Code Hints",
+    "name": "brackets-HTML5CodeHints",
+    "description": "More HTML5 Code Hints",
+    "version": "0.9.0",
+    "author": "c.oliff <christianoliff@gmail.com>",
+    "homepage": "https://github.com/coliff/brackets-HTML5CodeHints/",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/coliff/brackets-HTML5CodeHints/brackets-HTML5CodeHints.git"
+    },
+    "engines": {
+        "brackets": ">=0.39.0"
+    }
+}
