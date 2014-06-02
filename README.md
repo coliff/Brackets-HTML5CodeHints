@@ -1,4 +1,4 @@
-brackets-HTML5CodeHints
+Extended Code Hints for Brackets
 =======================
 
 Extend Brackets HTML code hints with more HTML5 elements and attributes such as Main, Picture, Srcset, inputmode as well as some HTML4 elements such as cellpadding, cellspacing and iframe.
@@ -23,4 +23,5 @@ HTML5 Attributes Added
 * Autocapitalize
 * Img ("srcset")
 * Input ("autocorrect")
+* Inputmode ("numeric")
 * Meta/name ("format-detection", "robots", "viewport")
