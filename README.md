@@ -11,9 +11,10 @@ HTML4 Tags Added
 * Frameset
 
 HTML4 Attributes Added
-* Table (cellpadding, cellspacing, height, width)
+* Table ("cellpadding", "cellspacing", "height", "width")
 
 HTML5 Tags Added
+* Main
 * Picture
 
 HTML5 Attributes Added
