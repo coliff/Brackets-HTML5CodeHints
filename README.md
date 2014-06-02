@@ -5,27 +5,27 @@ Extend Brackets HTML code hints with more HTML5 elements and attributes such as 
 
 Complete list of elements added:
 
-** HTML4 Tags **
+**HTML4 Tags**
 * Acronym
 * Center
 * Frame
 * Frameset
 
-** HTML4 Attributes **
+**HTML4 Attributes**
 * Table ("cellpadding", "cellspacing", "height", "width")
 
-** HTML5 Tags **
+**HTML5 Tags**
 * Main
 * Picture
 * Template (Web Components)
 
-** HTML5 Attributes **
+**HTML5 Attributes**
 * Autocorrect
 * Autocapitalize
 * Inputmode
 * Itemscope, Itemtype, Itemprop (Schema.org)
 
-** HTML5 Attribute Options **
+**HTML5 Attribute Options**
 * Audio ("buffered", "played")
 * Autocomplete ("billing", "cc-name", "cc-number", "cc-css", "cc-exp-month", "cc-exp-year", "cc-type", "country", "email", "name", "postal-code", "region", "shipping", "street-address", "tel", "url")
 * Img ("srcset")
