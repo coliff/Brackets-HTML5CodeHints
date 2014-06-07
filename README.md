@@ -8,10 +8,11 @@ Complete list of elements added:
 **HTML4 Tags**
 * acronym
 * center
-* frame
-* frameset
+* frame ("frameborder", "name", "scrolling", "src")
+* frameset ("rows")
 
 **HTML4 Attributes**
+* iframe ("frameborder", scrolling")
 * table ("cellpadding", "cellspacing", "height", "width")
 
 **HTML5 Tags**
@@ -29,11 +30,13 @@ Complete list of elements added:
 * audio ("buffered", "played")
 * autocomplete ("billing", "cc-name", "cc-number", "cc-css", "cc-exp-month", "cc-exp-year", "cc-type", "country", "email", "name", "postal-code", "region", "shipping", "street-address", "tel", "url")
 * http-equiv ("X-UA-Compatible", "content-language")
-* img ("srcset")
-* input ("autocorrect")
+* img ("sizes", srcset")
+* input ("autocorrect", "inputmode")
 * link/rel ("import")
 * meta/name ("format-detection", "robots", "viewport")
+* Source ("sizes", "srcset")
 * textarea ("autocomplete", "spellcheck")
 * video ("buffered", "crossorigin")
 
 If you spot a HTML tag or attribute missing that you'd like added please open an issue or pull-request.
+https://github.com/coliff/Brackets-HTML5CodeHints
