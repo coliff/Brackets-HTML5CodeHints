@@ -1,7 +1,7 @@
 Brackets-HTML5CodeHints
 =======================
 
-Extend Brackets HTML code hints with more HTML5 elements and attributes such as Main, Picture, Srcset, inputmode as well as some HTML4 elements such as cellpadding, cellspacing and iframe. Also includes hints for Web Components and Schema.org.
+Extend Brackets HTML code hints with more HTML5 elements and attributes such as Picture, Srcset, Template, inputmode as well as some HTML4 elements such as cellpadding, cellspacing and iframe. Also includes hints for Web Components and Schema.org.
 
 Complete list of elements added:
 
@@ -12,11 +12,11 @@ Complete list of elements added:
 * frameset ("rows")
 
 **HTML4 Attributes**
-* iframe ("frameborder", scrolling")
+* iframe ("frameborder", "scrolling")
 * table ("cellpadding", "cellspacing", "height", "width")
 
 **HTML5 Tags**
-* main
+* content (Shadow DOM)
 * picture
 * template (Web Components)
 
@@ -24,7 +24,8 @@ Complete list of elements added:
 * autocorrect
 * autocapitalize
 * inputmode
-* itemscope, Itemtype, Itemprop (Schema.org)
+* itemscope, itemtype, itemprop (Microdata - Schema.org)
+* onsearch
 
 **HTML5 Attribute Options**
 * audio ("buffered", "played")
@@ -34,9 +35,10 @@ Complete list of elements added:
 * input ("autocorrect", "inputmode")
 * link/rel ("import")
 * meta/name ("format-detection", "robots", "viewport")
-* Source ("sizes", "srcset")
+* meta/property ("al:ios:url", "al:ios:app_store_id", "al:ios:app_name", "al:android:url", "al:android:app_name", "al:android:package", "al:web:url") [applinks.org]
+* source ("sizes", "srcset")
 * textarea ("autocomplete", "spellcheck")
-* video ("buffered", "crossorigin")
+* video ("buffered", "crossorigin", "played")
 
 If you spot a HTML tag or attribute missing that you'd like added please open an issue or pull-request.
 https://github.com/coliff/Brackets-HTML5CodeHints
