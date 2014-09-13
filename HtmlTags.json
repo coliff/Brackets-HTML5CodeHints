@@ -1,5 +1,5 @@
 {
-    "a":          { "attributes": ["href", "hreflang", "media", "rel", "target", "type", "ng-blur", "ng-copy",  "ng-cut", "data-ng-blur", "data-ng-copy",  "data-ng-cut"] },
+    "a":          { "attributes": ["href", "hreflang", "media", "rel", "target", "type", "ng-blur", "ng-copy",  "ng-cut", "data-ng-blur", "data-ng-copy",  "data-ng-cut", "ng-href", "data-ng-href"] },
     "abbr":       { "attributes": [] },
     "acronym":    { "attributes": [] },
     "address":    { "attributes": [] },
