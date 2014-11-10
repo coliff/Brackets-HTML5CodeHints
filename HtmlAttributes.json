@@ -253,6 +253,7 @@
     "ng-click":           { "attribOption": [] , "global": "true" },
     "ng-cloak":           { "attribOption": [] , "global": "true" , "type": "flag" },
     "ng-dblclick":        { "attribOption": [] , "global": "true" },
+    "ng-form":        { "attribOption": [] , "global": "true" },
     "ng-hide":            { "attribOption": [] , "global": "true" },
     "ng-init":            { "attribOption": [] , "global": "true" },
     "ng-keydown":         { "attribOption": [] , "global": "true" },
