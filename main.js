@@ -544,7 +544,6 @@ define(function (require, exports, module) {
         // Parse JSON files
         tags = JSON.parse(HTMLTags);
         attributes = JSON.parse(HTMLAttributes);
-        console.log("AppInit");
         // Register code hint providers
         var tagHints = new TagHints();
         var attrHints = new AttrHints();
