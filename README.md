@@ -1,6 +1,8 @@
 Brackets-HTML5CodeHints
 =======================
 
+[![Join the chat at https://gitter.im/coliff/Brackets-HTML5CodeHints](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/coliff/Brackets-HTML5CodeHints?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Extend Brackets HTML code hints with more HTML5 elements and attributes such as Picture, Srcset, Template, inputmode as well as some HTML4 elements such as cellpadding, cellspacing and iframe. Also includes hints for Web Components and Schema.org.
 
 Complete list of elements added:
