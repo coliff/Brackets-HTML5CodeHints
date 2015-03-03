@@ -26,16 +26,19 @@ Complete list of elements added:
 * inputmode
 * itemscope, itemtype, itemprop (Microdata - Schema.org)
 * onsearch
+* srcset
 
 **HTML5 Attribute Options**
 * audio ("buffered", "played")
 * autocomplete ("billing", "cc-name", "cc-number", "cc-css", "cc-exp-month", "cc-exp-year", "cc-type", "country", "email", "name", "postal-code", "region", "shipping", "street-address", "tel", "url")
 * http-equiv ("X-UA-Compatible", "content-language")
-* img ("sizes", srcset")
-* input ("autocorrect", "inputmode")
-* link/rel ("import")
-* meta/name ("format-detection", "robots", "viewport")
+* img ("sizes", "srcset")
+* input ("autocorrect", "inputmode", "minlength")
+* inputmode ("email", "numeric", "tel")
+* link/rel ("canonical", "dns-prefetch", "import", "profile", "shortlink")
+* meta/name ("format-detection", "publisher", "referrer", "robots", "theme-color", "viewport")
 * meta/property ("al:ios:url", "al:ios:app_store_id", "al:ios:app_name", "al:android:url", "al:android:app_name", "al:android:package", "al:web:url") [applinks.org]
+* script/type ("application/ld+json")
 * source ("sizes", "srcset")
 * textarea ("autocomplete", "spellcheck")
 * video ("buffered", "crossorigin", "played")

@@ -2,8 +2,8 @@
     "title": "More HTML5 Code Hints",
     "name": "brackets-html5codehints",
     "description": "Extends HTML code hints with more HTML5 elements and attributes such as picture, srcset, inputmode as well as HTML4 elements such as cellpadding, cellspacing and iframe",
-    "version": "0.9.9",
-    "keywords":["template","picture","srcset","autocomplete","html5","html","cellpadding","autocorrect","hints","elements","attributes","template"],
+    "version": "1.2.1",
+    "keywords":["template","picture","srcset","autocomplete","html5","html","cellpadding","autocorrect","hints","elements","attributes","template","schema"],
     "author": "C.Oliff <christianoliff@gmail.com>",
     "homepage": "https://github.com/coliff/Brackets-HTML5CodeHints/",
     "repository": {
@@ -11,6 +11,6 @@
         "url": "git://github.com/coliff/brackets-HTML5CodeHints/brackets-HTML5CodeHints.git"
     },
     "engines": {
-        "brackets": ">=0.41.0"
+        "brackets": ">=1.1"
     }
 }
