@@ -1,30 +1,7 @@
 /*
- * Copyright (c) 2014 C Oliff
- *
- */
+ * Copyright (c) 2015 C Oliff
+*/
 
-/*
- * Copyright (c) 2012 Adobe Systems Incorporated. All rights reserved.
- *
- * Permission is hereby granted, free of charge, to any person obtaining a
- * copy of this software and associated documentation files (the "Software"),
- * to deal in the Software without restriction, including without limitation
- * the rights to use, copy, modify, merge, publish, distribute, sublicense,
- * and/or sell copies of the Software, and to permit persons to whom the
- * Software is furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
- * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
- * DEALINGS IN THE SOFTWARE.
- *
- */
 
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, indent: 4, maxerr: 50 */
 /*global define, brackets, $ */
@@ -109,14 +86,20 @@ define(function (require, exports, module) {
      * Returns a list of availble HTML tag hints if possible for the current
      * editor context. 
      *
-     * @return {{hints: Array.<string|jQueryObject>, match: string, 
-     *      selectInitial: boolean}}
+     * @return {jQuery.Deferred|{
+     *              hints: Array.<string|jQueryObject>,
+     *              match: string,
+     *              selectInitial: boolean,
+     *              handleWideResults: boolean}}
      * Null if the provider wishes to end the hinting session. Otherwise, a
-     * response object that provides 1. a sorted array hints that consists 
-     * of strings; 2. a string match that is used by the manager to emphasize
-     * matching substrings when rendering the hint list; and 3. a boolean that
-     * indicates whether the first result, if one exists, should be selected
-     * by default in the hint list window.
+     * response object that provides:
+     * 1. a sorted array hints that consists of strings
+     * 2. a string match that is used by the manager to emphasize matching
+     *    substrings when rendering the hint list
+     * 3. a boolean that indicates whether the first result, if one exists,
+     *    should be selected by default in the hint list window.
+     * 4. handleWideResults, a boolean (or undefined) that indicates whether
+     *    to allow result string to stretch width of display.
      */
     TagHints.prototype.getHints = function (implicitChar) {
         var query,
@@ -136,7 +119,8 @@ define(function (require, exports, module) {
                 return {
                     hints: result,
                     match: query,
-                    selectInitial: true
+                    selectInitial: true,
+                    handleWideResults: false
                 };
             }
         }
@@ -291,8 +275,7 @@ define(function (require, exports, module) {
         var pos = editor.getCursorPos(),
             tokenType,
             offset,
-            query,
-            textAfterCursor;
+            query;
         
         this.editor = editor;
         this.tagInfo = HTMLUtils.getTagInfo(editor, pos);
@@ -362,22 +345,27 @@ define(function (require, exports, module) {
      * Returns a list of availble HTML attribute hints if possible for the 
      * current editor context. 
      *
-     * @return {{hints: Array.<string|jQueryObject>, match: string, 
-     *      selectInitial: boolean}}
+     * @return {jQuery.Deferred|{
+     *              hints: Array.<string|jQueryObject>,
+     *              match: string,
+     *              selectInitial: boolean,
+     *              handleWideResults: boolean}}
      * Null if the provider wishes to end the hinting session. Otherwise, a
-     * response object that provides 1. a sorted array hints that consists 
-     * of strings; 2. a string match that is used by the manager to emphasize
-     * matching substrings when rendering the hint list; and 3. a boolean that
-     * indicates whether the first result, if one exists, should be selected
-     * by default in the hint list window.
+     * response object that provides:
+     * 1. a sorted array hints that consists of strings
+     * 2. a string match that is used by the manager to emphasize matching
+     *    substrings when rendering the hint list
+     * 3. a boolean that indicates whether the first result, if one exists,
+     *    should be selected by default in the hint list window.
+     * 4. handleWideResults, a boolean (or undefined) that indicates whether
+     *    to allow result string to stretch width of display.
      */
     AttrHints.prototype.getHints = function (implicitChar) {
         var cursor = this.editor.getCursorPos(),
             query = {queryStr: null},
             tokenType,
             offset,
-            result = [],
-            textAfterCursor;
+            result = [];
  
         this.tagInfo = HTMLUtils.getTagInfo(this.editor, cursor);
         tokenType = this.tagInfo.position.tokenType;
@@ -434,12 +422,18 @@ define(function (require, exports, module) {
                 return {
                     hints: result,
                     match: query.queryStr,
-                    selectInitial: true
+                    selectInitial: true,
+                    handleWideResults: false
                 };
             } else if (hints instanceof Object && hints.hasOwnProperty("done")) { // Deferred hints
                 var deferred = $.Deferred();
                 hints.done(function (asyncHints) {
-                    deferred.resolveWith(this, [{ hints : asyncHints, match: query.queryStr, selectInitial: true }]);
+                    deferred.resolveWith(this, [{
+                        hints: asyncHints,
+                        match: query.queryStr,
+                        selectInitial: true,
+                        handleWideResults: false
+                    }]);
                 });
                 return deferred;
             } else {
