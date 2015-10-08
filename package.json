@@ -2,7 +2,7 @@
     "title": "AngularJS Code Hints",
     "name": "brackets-angularjs-codehints",
     "description": "Extend Brackets HTML code hints and collif's Brackets-HTML5CodeHints with AngularJS elements like ng-include, ng-view and attributes such as ng-class, ng-controller, ng-app",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "keywords":["angular","angularjs","autocomplete","html5","html", "template"],
     "author": "Sirajuddin Choudhary",
     "homepage": "https://github.com/sirajc/Brackets-AngularJS-CodeHints/",
