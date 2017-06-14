@@ -1,6 +1,8 @@
 Brackets-HTML5CodeHints
 =======================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/coliff/Brackets-HTML5CodeHints.svg)](https://greenkeeper.io/)
+
 Extend Brackets HTML code hints with more HTML5 elements and attributes such as Picture, Srcset, Template, inputmode as well as some HTML4 elements such as cellpadding, cellspacing and iframe. Also includes hints for Web Components and Schema.org.
 
 Complete list of elements added:
