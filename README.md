@@ -1,5 +1,7 @@
-Brackets-HTML5CodeHints
-=======================
+![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
+## Brackets-HTML5CodeHints
 
 **This project is not maintained. I no longer use Adobe Brackets so this extension is no longer maintained. I'm interested in porting this to VS Code. If you can help please get in touch!**
 
