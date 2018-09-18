@@ -1,4 +1,4 @@
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/coliff/bootstrap-ie8/master/LICENSE)
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/coliff/Brackets-HTML5CodeHints/master/LICENSE)
 ![https://registry.brackets.io/](https://badges.ml/dt/brackets-html5codehints)
 ![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
