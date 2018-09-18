@@ -1,5 +1,8 @@
+[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/coliff/bootstrap-ie8/master/LICENSE)
+![https://registry.brackets.io/](https://badges.ml/dt/brackets-html5codehints)
 ![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/coliff)
 
 ## Brackets-HTML5CodeHints
 
